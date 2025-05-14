@@ -6,7 +6,7 @@ import { PeoplePage } from './pages/PeoplePage';
 export const Root = () => (
   <Routes>
     <Route index path="/" element={<HomePage />} />
-    <Route index path="/home" element={<Navigate to="/" replace />} />
+    <Route path="/home" element={<Navigate to="/" replace />} />
     <Route path="/people" element={<PeoplePage />} />
     <Route path="/people/:slug" element={<PeoplePage />} />
     <Route path="*" element={<NotFoundPage />} />
